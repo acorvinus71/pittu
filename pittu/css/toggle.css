@@ -1,0 +1,49 @@
+.menu-link { display: none}
+.menu {
+	background-color: #fff;
+	padding:10px;
+	padding-top:0;
+	width:100%;
+  float:left;
+  margin:0;
+  -webkit-transition: all 0.3s ease;  
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; 
+}
+
+/*.menu:after{
+  content: "";
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  margin-left:-11.2px;
+  z-index: -1;
+  border: 1px solid #ccc;
+  border-width: 0 1px 0 0;
+}*/
+
+.menu ul { 
+  margin: 0px;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+}
+
+@media screen and (max-width: 991px) {
+	.new{
+		border:none !important;
+		width:0 !important
+		}
+  .example-header .container { width: 100%; }
+  a.menu-link { display: block; color: #fff; background-color: #444; position:absolute; right:0; z-index:998; text-decoration: none; padding: 10px 12px;}
+  .menu { clear: both; width:196px; position:absolute; right:0;padding:10px; padding-top:0; padding-bottom:0}
+  .menu, .menu > ul ul { overflow: hidden; max-height:0;border: 1px solid #ccc;border-width: 0 0 0 1px;background-color: #fff;}
+  .menu.active, .menu > ul ul.active { max-height: 100em; z-index:998;}
+  .nav-search{
+	  margin-right:70px !important;
+  }
+  .menu:after{
+  display: none;
+}
+}
